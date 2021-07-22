@@ -8,7 +8,7 @@ public class Application {
 		
 		byte myByte = 102;
 		short myShort = 16;
-		int myInt = 32500;
+		int myInt = 0, limitup = 10;
 		long myLong = 124578;
 		
 		float myFloat = 32.5f;
@@ -25,6 +25,20 @@ public class Application {
 		displayVariable(myDouble);
 		displayVariable(myChar);
 		displayVariable(myBoolean);
+		displayEmptyLine();
+		
+		// While loop - depends on condition
+		while (myInt <= limitup) {
+			displayVariable(myInt);
+			myInt ++;
+		}
+		
+		displayEmptyLine();
+		// Do loop - is excecuted at least once
+		do {
+			displayVariable(myInt);
+			myInt ++;
+		} while (myInt < 10);
 
 	}
 	
@@ -62,6 +76,10 @@ public class Application {
 	
 	public static void displayVariable(String str) {
 		System.out.println(str);
+	}
+	
+	public static void displayEmptyLine() {
+		System.out.println();
 	}
 
 }
