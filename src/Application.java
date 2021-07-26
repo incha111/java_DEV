@@ -28,17 +28,26 @@ public class Application {
 		displayEmptyLine();
 		
 		// While loop - depends on condition
-		while (myInt <= limitup) {
+		/*while (myInt <= limitup) {
 			displayVariable(myInt);
 			myInt ++;
-		}
+		}*/
 		
 		displayEmptyLine();
 		// Do loop - is excecuted at least once
-		do {
+		/*do {
 			displayVariable(myInt);
 			myInt ++;
-		} while (myInt < 10);
+		} while (myInt < 10);*/
+		
+		// For loop
+		for(int i = 0; i < 10; i ++) { //i += 2: increments by 2
+			System.out.printf("Value of i = %d\n", i);
+			// Print format
+			// %d: decimal
+			// %s: string
+			// \n: new line
+		}
 
 	}
 	
