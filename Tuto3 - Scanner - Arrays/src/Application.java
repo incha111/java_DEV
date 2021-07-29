@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Application {
@@ -54,6 +55,28 @@ public class Application {
 			System.out.printf("Value on array position %d is: %d\n",i,myNumbers[i]);
 		}
 		
+		// Multidimensional array
+		int[][] multiArray = {
+				{1,2,3},
+				{4,5},
+				{6,7,8,9,10}
+		};
+		System.out.println();
+		System.out.println("Display multiArray");
+		// First way to display the multiArray
+		/*for(int[] mArray: multiArray) {
+			System.out.println(Arrays.toString(mArray));
+		}*/
 		
+		// Second way to display the multiArray
+		for(int i = 0; i < multiArray.length; i++) {
+			for(int j = 0; j < multiArray[i].length; j++) {
+				System.out.print(multiArray[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.printf("Value of multiArray on position[0][2] is: %d\n",multiArray[0][2]);
+		System.out.printf("Value of multiArray on position[1][0] is: %d\n",multiArray[1][0]);
+		System.out.printf("Value of multiArray on position[2][3] is: %d\n",multiArray[2][3]);
 	}
 }
