@@ -6,10 +6,13 @@ public class Person {
 	int age;
 	
 	// Constructor
-	public Person(String firstName, String lastName, int age) {
+	public Person(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.age = age;
+	}
+	
+	public Person(int age) {
+		
 	}
 	
 	// Method
